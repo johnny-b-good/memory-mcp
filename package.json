@@ -1,0 +1,26 @@
+{
+  "name": "memory-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "node ./src/index.ts",
+    "build": "tsc && chmod 755 dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "bin": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.5",
+    "prettier": "^3.9.7",
+    "typescript": "^7.0.2"
+  }
+}
